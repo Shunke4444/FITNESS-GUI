@@ -220,13 +220,10 @@ public class Login extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(this, "Please enter a valid name. It should not contain numbers or special characters.", "Invalid Name", JOptionPane.ERROR_MESSAGE);
         return;
     }
-//     Questionnare questionnare = new Questionnare();
-//     questionnare.setVisible(true);
-//     this.setVisible(false);
+     Questionnare questionnare = new Questionnare();
+     questionnare.setVisible(true);
+     this.setVisible(false);
 
-WorkOutSetting workout = new WorkOutSetting();
-workout.setVisible(true);
-this.setVisible(false);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
