@@ -175,6 +175,8 @@ public class Login extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        jPasswordField1.getAccessibleContext().setAccessibleName("");
+
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 230, 330, 430));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/LOGOFR.png"))); // NOI18N
@@ -208,22 +210,30 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-   String username = jTextField1.getText().trim();
+String username = jTextField1.getText().trim();
 
-    // Check if the username is empty
-    if (username.isEmpty()) {
-        JOptionPane.showMessageDialog(this, "Username cannot be empty", "Invalid Username", JOptionPane.ERROR_MESSAGE);
-        return;
-    }
+// Check if the username is empty
+if (username.isEmpty()) {
+    JOptionPane.showMessageDialog(this, "Username cannot be empty", "Invalid Username", JOptionPane.ERROR_MESSAGE);
+    return;
+}
 
-    // Check if the username contains only valid characters (letters and spaces)
-    if (!username.matches("[a-zA-Z ]+")) {
-        JOptionPane.showMessageDialog(this, "Please enter a valid name. It should not contain numbers or special characters.", "Invalid Name", JOptionPane.ERROR_MESSAGE);
-        return;
-    }
-     Questionnare questionnare = new Questionnare();
-     questionnare.setVisible(true);
-     this.setVisible(false);
+// Check if the username contains only valid characters (letters and spaces)
+if (!username.matches("[a-zA-Z ]+")) {
+    JOptionPane.showMessageDialog(this, "Please enter a valid name. It should not contain numbers or special characters.", "Invalid Name", JOptionPane.ERROR_MESSAGE);
+    return; 
+}
+
+String password = new String(jPasswordField1.getPassword()).trim(); // Use getPassword() for password field
+
+if (password.isEmpty()) {
+    JOptionPane.showMessageDialog(this, "Password cannot be Empty", "Invalid Password", JOptionPane.ERROR_MESSAGE);
+    return;
+}
+
+Questionnare questionnare = new Questionnare();
+questionnare.setVisible(true);
+this.setVisible(false); // Hide the current window
 
     }//GEN-LAST:event_jButton1ActionPerformed
 

@@ -244,7 +244,7 @@ public class Signup extends javax.swing.JFrame {
     
     int result = JOptionPane.showOptionDialog(
                 null,
-                "Signup successful! Proceed?",
+                "Signup successful! Login?",
                 "Success",
                 JOptionPane.YES_NO_OPTION,
                 JOptionPane.INFORMATION_MESSAGE,
@@ -254,8 +254,6 @@ public class Signup extends javax.swing.JFrame {
         );
 
         if (result == JOptionPane.YES_OPTION) {
-            // Open next window or perform an action
-            JOptionPane.showMessageDialog(null, "Opening the next page!", "Next Step", JOptionPane.INFORMATION_MESSAGE);
             openNextPage();
         }
     }//GEN-LAST:event_jButton1ActionPerformed
