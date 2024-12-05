@@ -4,6 +4,8 @@
  */
 package fitnessapp;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author jihad
@@ -223,9 +225,45 @@ public class Signup extends javax.swing.JFrame {
     }//GEN-LAST:event_jPasswordField2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+   String username = jTextField1.getText().trim();
+    if (username.isEmpty()) {
+        JOptionPane.showMessageDialog(this, "Username cannot be empty", "Invalid Username", JOptionPane.ERROR_MESSAGE);
+        return;
+    }
+ 
+    if (!username.matches("[a-zA-Z ]+")) {
+        JOptionPane.showMessageDialog(this, "Please enter a valid name. It should not contain numbers or special characters.", "Invalid Name", JOptionPane.ERROR_MESSAGE);
+        return;
+    }
+    String password = new String(jPasswordField1.getPassword());
+    if (password.isEmpty()) {
+        JOptionPane.showMessageDialog(this, "Password cannot be empty.", "Invalid Password", JOptionPane.ERROR_MESSAGE);
+        return;
+    }
+    
+    int result = JOptionPane.showOptionDialog(
+                null,
+                "Signup successful! Proceed?",
+                "Success",
+                JOptionPane.YES_NO_OPTION,
+                JOptionPane.INFORMATION_MESSAGE,
+                null,
+                new String[]{"Open", "Cancel"},
+                "Open"
+        );
+
+        if (result == JOptionPane.YES_OPTION) {
+            // Open next window or perform an action
+            JOptionPane.showMessageDialog(null, "Opening the next page!", "Next Step", JOptionPane.INFORMATION_MESSAGE);
+            openNextPage();
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    private void openNextPage(){
+        Login login = new Login();
+        login.setVisible(true);
+        this.setVisible(false);
+    }
     /**
      * @param args the command line arguments
      */
