@@ -4,6 +4,8 @@
  */
 package fitnessapp;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author jihad
@@ -47,6 +49,12 @@ public class Login extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(171, 220, 229));
         jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
 
         label2.setFont(new java.awt.Font("Lucida Sans Unicode", 1, 12)); // NOI18N
         label2.setName("Thingy"); // NOI18N
@@ -200,11 +208,28 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        Questionnare questionnare = new Questionnare();
-        
-        questionnare.setVisible(true);
-        this.setVisible(false);
+   String username = jTextField1.getText().trim();
+
+    // Check if the username is empty
+    if (username.isEmpty()) {
+        JOptionPane.showMessageDialog(this, "Username cannot be empty", "Invalid Username", JOptionPane.ERROR_MESSAGE);
+        return;
+    }
+
+    // Check if the username contains only valid characters (letters and spaces)
+    if (!username.matches("[a-zA-Z ]+")) {
+        JOptionPane.showMessageDialog(this, "Please enter a valid name. It should not contain numbers or special characters.", "Invalid Name", JOptionPane.ERROR_MESSAGE);
+        return;
+    }
+     Questionnare questionnare = new Questionnare();
+     questionnare.setVisible(true);
+     this.setVisible(false);
+
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
 
     /**
      * @param args the command line arguments
