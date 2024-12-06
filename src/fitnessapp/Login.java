@@ -231,8 +231,8 @@ if (password.isEmpty()) {
     return;
 }
 
-Questionnare questionnare = new Questionnare();
-questionnare.setVisible(true);
+WelcomePage welcome = new WelcomePage();
+welcome.setVisible(true);
 this.setVisible(false); // Hide the current window
 
     }//GEN-LAST:event_jButton1ActionPerformed
