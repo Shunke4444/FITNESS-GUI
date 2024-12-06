@@ -78,21 +78,21 @@ public class Question4 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        Question4 quest4 = new Question4();
-        quest4.setVisible(true);
-        this.setVisible(false)
+        Welcome2 welcome2 = new Welcome2();
+        welcome2.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        Question4 quest4 = new Question4();
-        quest4.setVisible(true);
+        Welcome2 welcome2 = new Welcome2();
+        welcome2.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        Question4 quest4 = new Question4();
-        quest4.setVisible(true);
-        this.setVisible(false);
+      Welcome2 welcome2 = new Welcome2();
+      welcome2.setVisible(true);
+      this.setVisible(false);
 
     }//GEN-LAST:event_jButton3ActionPerformed
 
