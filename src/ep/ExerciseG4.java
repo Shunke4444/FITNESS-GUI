@@ -125,6 +125,11 @@ public class ExerciseG4 extends javax.swing.JFrame {
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ep/subchange.png"))); // NOI18N
         jButton2.setBorder(null);
         jButton2.setPreferredSize(new java.awt.Dimension(381, 36));
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ep/sub2.png"))); // NOI18N
         jButton3.setBorder(null);
@@ -331,11 +336,17 @@ public class ExerciseG4 extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+        ExerciseG3 exer = new ExerciseG3();
+        exer.setVisible(true);
+        exer.setLocationRelativeTo(null);
+        this.setVisible(false);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
-        // TODO add your handling code here:
+       ExerciseG2 exer = new ExerciseG2();
+        exer.setVisible(true);
+        exer.setLocationRelativeTo(null);
+        this.setVisible(false);
     }//GEN-LAST:event_jButton11ActionPerformed
 
     private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
@@ -365,6 +376,13 @@ public class ExerciseG4 extends javax.swing.JFrame {
         wo.setLocationRelativeTo(null);
         this.setVisible(false);
     }//GEN-LAST:event_jButton14ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        ExerciseG exer = new ExerciseG();
+        exer.setVisible(true);
+        exer.setLocationRelativeTo(null);
+        this.setVisible(false);
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments

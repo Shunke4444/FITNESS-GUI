@@ -339,7 +339,7 @@ public class ExerciseG3 extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
-       ExerciseG2 exer = new ExerciseG2();
+       ExerciseG4 exer = new ExerciseG4();
         exer.setVisible(true);
         exer.setLocationRelativeTo(null);
         this.setVisible(false);
