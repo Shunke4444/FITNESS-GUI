@@ -50,7 +50,6 @@ public class Welcome2 extends javax.swing.JFrame {
 
         jButton1.setBackground(new java.awt.Color(242, 242, 242));
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/GoToHome.png"))); // NOI18N
-        jButton1.setActionCommand("");
         jButton1.setBorder(null);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -101,6 +100,7 @@ public class Welcome2 extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         Dashboard dashboard = new Dashboard();
+        dashboard.setLocationRelativeTo(null);
         dashboard.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_jButton1ActionPerformed

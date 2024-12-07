@@ -127,6 +127,7 @@ public class WelcomePage extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         Questionnare quest = new Questionnare();
+        quest.setLocationRelativeTo(null);
         quest.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_jButton1ActionPerformed

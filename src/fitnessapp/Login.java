@@ -204,8 +204,8 @@ public class Login extends javax.swing.JFrame {
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         Signup signup = new Signup();
-        
         signup.setVisible(true);
+        signup.setLocationRelativeTo(null);
         this.setVisible(false);
     }//GEN-LAST:event_jButton4ActionPerformed
 

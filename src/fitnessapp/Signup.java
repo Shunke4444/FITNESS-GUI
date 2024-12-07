@@ -260,6 +260,7 @@ public class Signup extends javax.swing.JFrame {
 
     private void openNextPage(){
         Login login = new Login();
+        login.setLocationRelativeTo(null);
         login.setVisible(true);
         this.setVisible(false);
     }
