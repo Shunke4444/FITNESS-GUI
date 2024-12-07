@@ -8,12 +8,12 @@ package fitnessapp;
  *
  * @author User
  */
-public class WorkOutSetting extends javax.swing.JFrame {
+public class lvlSetting extends javax.swing.JFrame {
 
     /**
-     * Creates new form WorkOutSetting
+     * Creates new form lvlSetting
      */
-    public WorkOutSetting() {
+    public lvlSetting() {
         initComponents();
     }
 
@@ -26,7 +26,6 @@ public class WorkOutSetting extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jScrollBar1 = new javax.swing.JScrollBar();
         Orangebg = new javax.swing.JPanel();
         header = new javax.swing.JPanel();
         profile = new javax.swing.JLabel();
@@ -35,6 +34,7 @@ public class WorkOutSetting extends javax.swing.JFrame {
         magnify = new javax.swing.JLabel();
         menu = new javax.swing.JLabel();
         exercise = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         home = new javax.swing.JButton();
         gym = new javax.swing.JButton();
         setting = new javax.swing.JLabel();
@@ -42,6 +42,8 @@ public class WorkOutSetting extends javax.swing.JFrame {
         exit = new javax.swing.JLabel();
         back = new javax.swing.JLabel();
         tabs = new javax.swing.JLabel();
+        gym1 = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -49,8 +51,6 @@ public class WorkOutSetting extends javax.swing.JFrame {
         Orangebg.setBackground(new java.awt.Color(255, 152, 63));
 
         header.setBackground(new java.awt.Color(171, 220, 229));
-
-        profile.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Profile (2).png"))); // NOI18N
 
         notif.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/notif.png"))); // NOI18N
 
@@ -61,6 +61,8 @@ public class WorkOutSetting extends javax.swing.JFrame {
         exercise.setFont(new java.awt.Font("Lucida Sans", 1, 14)); // NOI18N
         exercise.setText("Exercise");
 
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/dp.png"))); // NOI18N
+
         javax.swing.GroupLayout headerLayout = new javax.swing.GroupLayout(header);
         header.setLayout(headerLayout);
         headerLayout.setHorizontalGroup(
@@ -70,13 +72,15 @@ public class WorkOutSetting extends javax.swing.JFrame {
                 .addComponent(menu)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(exercise)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 40, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 55, Short.MAX_VALUE)
                 .addComponent(magnify)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(search, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(24, 24, 24)
-                .addComponent(notif)
                 .addGap(18, 18, 18)
+                .addComponent(notif)
+                .addGap(12, 12, 12)
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(profile)
                 .addContainerGap())
         );
@@ -89,28 +93,32 @@ public class WorkOutSetting extends javax.swing.JFrame {
                         .addComponent(profile, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap(12, Short.MAX_VALUE))
                     .addGroup(headerLayout.createSequentialGroup()
-                        .addGroup(headerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(exercise, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(menu, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(headerLayout.createSequentialGroup()
-                                .addGap(8, 8, 8)
-                                .addComponent(notif))
-                            .addComponent(search, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(magnify, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(headerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(notif, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(exercise, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(menu, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(search)
+                            .addComponent(magnify, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(0, 0, Short.MAX_VALUE))))
         );
 
-        home.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/home.png"))); // NOI18N
+        home.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/beginner.png"))); // NOI18N
         home.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 homeActionPerformed(evt);
             }
         });
 
-        gym.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Gym (2).png"))); // NOI18N
+        gym.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/expert.png"))); // NOI18N
+        gym.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gymActionPerformed(evt);
+            }
+        });
 
         setting.setFont(new java.awt.Font("Lucida Sans", 1, 24)); // NOI18N
-        setting.setText("Workout Setting");
+        setting.setText("Level Setting");
 
         footer.setBackground(new java.awt.Color(171, 220, 229));
 
@@ -147,34 +155,57 @@ public class WorkOutSetting extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        gym1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/medium.png"))); // NOI18N
+        gym1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gym1ActionPerformed(evt);
+            }
+        });
+
+        jButton1.setBackground(new java.awt.Color(255, 152, 63));
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/backpage.png"))); // NOI18N
+        jButton1.setBorder(null);
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout OrangebgLayout = new javax.swing.GroupLayout(Orangebg);
         Orangebg.setLayout(OrangebgLayout);
         OrangebgLayout.setHorizontalGroup(
             OrangebgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(header, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(footer, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, OrangebgLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(OrangebgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(gym, javax.swing.GroupLayout.PREFERRED_SIZE, 292, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(home, javax.swing.GroupLayout.PREFERRED_SIZE, 292, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(50, 50, 50))
             .addGroup(OrangebgLayout.createSequentialGroup()
-                .addGap(95, 95, 95)
+                .addContainerGap()
+                .addComponent(jButton1)
+                .addGap(76, 76, 76)
                 .addComponent(setting)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, OrangebgLayout.createSequentialGroup()
+                .addContainerGap(97, Short.MAX_VALUE)
+                .addGroup(OrangebgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(gym, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(home, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(gym1, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(102, 102, 102))
         );
         OrangebgLayout.setVerticalGroup(
             OrangebgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(OrangebgLayout.createSequentialGroup()
                 .addComponent(header, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(45, 45, 45)
-                .addComponent(setting)
-                .addGap(49, 49, 49)
-                .addComponent(home, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(37, 37, 37)
-                .addComponent(gym, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 64, Short.MAX_VALUE)
+                .addGap(12, 12, 12)
+                .addGroup(OrangebgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jButton1)
+                    .addComponent(setting))
+                .addGap(18, 18, 18)
+                .addComponent(home, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(gym1, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(gym, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(footer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
@@ -197,6 +228,18 @@ public class WorkOutSetting extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_homeActionPerformed
 
+    private void gymActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gymActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_gymActionPerformed
+
+    private void gym1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gym1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_gym1ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -214,20 +257,20 @@ public class WorkOutSetting extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(WorkOutSetting.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(lvlSetting.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(WorkOutSetting.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(lvlSetting.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(WorkOutSetting.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(lvlSetting.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(WorkOutSetting.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(lvlSetting.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new WorkOutSetting().setVisible(true);
+                new lvlSetting().setVisible(true);
             }
         });
     }
@@ -239,9 +282,11 @@ public class WorkOutSetting extends javax.swing.JFrame {
     private javax.swing.JLabel exit;
     private javax.swing.JPanel footer;
     private javax.swing.JButton gym;
+    private javax.swing.JButton gym1;
     private javax.swing.JPanel header;
     private javax.swing.JButton home;
-    private javax.swing.JScrollBar jScrollBar1;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel magnify;
     private javax.swing.JLabel menu;
     private javax.swing.JLabel notif;
