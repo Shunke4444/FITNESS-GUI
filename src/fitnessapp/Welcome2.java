@@ -90,9 +90,9 @@ public class Welcome2 extends javax.swing.JFrame {
                 .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel4)
-                .addGap(108, 108, 108)
+                .addGap(18, 18, 18)
                 .addComponent(jButton1)
-                .addContainerGap(524, Short.MAX_VALUE))
+                .addContainerGap(36, Short.MAX_VALUE))
         );
 
         pack();

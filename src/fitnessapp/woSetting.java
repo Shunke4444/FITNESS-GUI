@@ -48,9 +48,11 @@ public class woSetting extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setResizable(false);
 
         Orangebg.setBackground(new java.awt.Color(255, 152, 63));
+        Orangebg.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         header.setBackground(new java.awt.Color(171, 220, 229));
 
@@ -105,7 +107,10 @@ public class woSetting extends javax.swing.JFrame {
                         .addGap(0, 0, Short.MAX_VALUE))))
         );
 
+        home.setBackground(new java.awt.Color(255, 204, 0));
         home.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/home.png"))); // NOI18N
+        home.setBorder(null);
+        home.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         home.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 homeActionPerformed(evt);
@@ -161,8 +166,10 @@ public class woSetting extends javax.swing.JFrame {
             }
         });
 
+        jButton2.setBackground(new java.awt.Color(204, 255, 51));
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Gym (2).png"))); // NOI18N
         jButton2.setBorder(null);
+        jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
