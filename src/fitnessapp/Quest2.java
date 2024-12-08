@@ -46,9 +46,9 @@ public class Quest2 extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
-        setMaximumSize(new java.awt.Dimension(392, 852));
-        setMinimumSize(new java.awt.Dimension(392, 852));
-        setPreferredSize(new java.awt.Dimension(392, 852));
+        setMaximumSize(new java.awt.Dimension(392, 682));
+        setMinimumSize(new java.awt.Dimension(392, 682));
+        setPreferredSize(new java.awt.Dimension(392, 682));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Vector-Section.png"))); // NOI18N
 
@@ -173,6 +173,7 @@ submitButton.addActionListener((ActionEvent e) -> {
        // Replace with your actual frame class
        DoctorApproval doctapp = new DoctorApproval();
        doctapp.setVisible(true);
+       doctapp.setLocationRelativeTo(null);
        this.setVisible(false);
         dialog.dispose(); // Close the dialog
         this.dispose(); // Optionally close the current frame

@@ -11,17 +11,16 @@ import javax.swing.SwingUtilities;
  *
  * @author jihad
  */
-public class Dashboard extends javax.swing.JFrame {
+public class Dashboard1 extends javax.swing.JFrame {
 
     /**
-     * Creates new form Dashboard
+     * Creates new form Dashboard1
      */
-    public Dashboard() {
+    public Dashboard1() {
         initComponents();
         jPanel2.setVisible(false);
     }
-    
- 
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -31,7 +30,6 @@ public class Dashboard extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLayeredPane1 = new javax.swing.JLayeredPane();
         jPanel2 = new javax.swing.JPanel();
         jToggleButton1 = new javax.swing.JToggleButton();
         jLabel1 = new javax.swing.JLabel();
@@ -76,13 +74,13 @@ public class Dashboard extends javax.swing.JFrame {
         jLabel30 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(392, 852));
-        setMinimumSize(new java.awt.Dimension(392, 852));
-        setPreferredSize(new java.awt.Dimension(392, 852));
+        setPreferredSize(new java.awt.Dimension(400, 682));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel2.setBackground(new java.awt.Color(171, 220, 229));
+        jPanel2.setMaximumSize(new java.awt.Dimension(392, 682));
         jPanel2.setMinimumSize(new java.awt.Dimension(300, 84));
+        jPanel2.setPreferredSize(new java.awt.Dimension(392, 682));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jToggleButton1.setBackground(new java.awt.Color(171, 220, 229));
@@ -97,8 +95,6 @@ public class Dashboard extends javax.swing.JFrame {
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Line.png"))); // NOI18N
         jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 74, 310, 10));
-
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Profile (2).png"))); // NOI18N
         jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, 60));
 
         jLabel3.setFont(new java.awt.Font("Lucida Sans Typewriter", 0, 12)); // NOI18N
@@ -116,7 +112,7 @@ public class Dashboard extends javax.swing.JFrame {
                 jLabel7MouseClicked(evt);
             }
         });
-        jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 200, 80, 30));
+        jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 150, 80, 30));
 
         jLabel8.setFont(new java.awt.Font("Lucida Sans Typewriter", 0, 24)); // NOI18N
         jLabel8.setText("Exercise");
@@ -125,55 +121,70 @@ public class Dashboard extends javax.swing.JFrame {
                 jLabel8MouseClicked(evt);
             }
         });
-        jPanel2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 260, 120, 20));
+        jPanel2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 210, 120, 20));
 
         jLabel9.setFont(new java.awt.Font("Lucida Sans Typewriter", 0, 24)); // NOI18N
         jLabel9.setText("Mealplans");
-        jPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 310, 150, 30));
+        jPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 260, 150, 30));
 
         jLabel10.setFont(new java.awt.Font("Lucida Sans Typewriter", 0, 24)); // NOI18N
         jLabel10.setText("Logout");
         jLabel10.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel10MouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 jLabel10MouseEntered(evt);
             }
         });
-        jPanel2.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 410, 190, 30));
+        jPanel2.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 360, 190, 30));
 
         jLabel11.setFont(new java.awt.Font("Lucida Sans Typewriter", 0, 24)); // NOI18N
         jLabel11.setText("Subscription");
-        jPanel2.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 360, 190, 30));
+        jLabel11.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel11MouseClicked(evt);
+            }
+        });
+        jLabel11.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jLabel11KeyPressed(evt);
+            }
+        });
+        jPanel2.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 310, 190, 30));
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/LOGOFR.png"))); // NOI18N
-        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 570, -1, -1));
+        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 420, -1, -1));
         jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 150, -1, -1));
 
         jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/FoodNav.png"))); // NOI18N
-        jPanel2.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 310, -1, -1));
+        jPanel2.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 260, -1, -1));
         jPanel2.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, -1, -1));
         jPanel2.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 130, -1, -1));
 
         jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/HomeNav.png"))); // NOI18N
-        jPanel2.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, -1, -1));
+        jPanel2.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, -1, -1));
 
         jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/ExerciseNav.png"))); // NOI18N
-        jPanel2.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 256, -1, -1));
+        jPanel2.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 210, -1, -1));
 
         jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/PlansNav.png"))); // NOI18N
         jLabel18.setText("   ");
-        jPanel2.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 360, 80, 30));
+        jPanel2.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 310, 80, 30));
 
         jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/LogoutNav.png"))); // NOI18N
-        jPanel2.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 410, -1, 30));
+        jPanel2.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 360, -1, 30));
 
         jLabel31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/dp.png"))); // NOI18N
-        jPanel2.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, -1, -1));
+        jPanel2.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, -1));
 
-        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 290, 930));
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 310, 1120));
 
         jScrollPane2.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane2.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
+        jScrollPane2.setMaximumSize(new java.awt.Dimension(392, 852));
         jScrollPane2.setMinimumSize(new java.awt.Dimension(412, 6));
+        jScrollPane2.setPreferredSize(new java.awt.Dimension(410, 682));
 
         jPanel1.setBackground(new java.awt.Color(255, 152, 63));
         jPanel1.setMaximumSize(new java.awt.Dimension(398, 1900));
@@ -183,8 +194,6 @@ public class Dashboard extends javax.swing.JFrame {
 
         header.setBackground(new java.awt.Color(171, 220, 229));
         header.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        profile.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Profile (2).png"))); // NOI18N
         header.add(profile, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 10, -1, 60));
 
         notif.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/notif.png"))); // NOI18N
@@ -245,78 +254,97 @@ public class Dashboard extends javax.swing.JFrame {
 
         jScrollPane2.setViewportView(jPanel1);
 
-        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 380, 1320));
+        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 380, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-    int x = 0;
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-       if (x == 0) { // If the sidebar is closed, open it.
-        jPanel2.setVisible(true); // Make the sidebar visible.
-        jPanel2.setSize(x, 835); // Set initial size to 0 width.
-        Thread th = new Thread(){
-            @Override
-            public void run() {
-                try {
-                    for (int i = 0; i <= 300; i++) { // Increment width to open the sidebar.
-                        Thread.sleep(1); // Smooth animation with 10ms sleep.
-                        jPanel2.setSize(i, 835); // Update size of sidebar.
-                    }
-                } catch (Exception e) {
-                    JOptionPane.showMessageDialog(null, e);
-                }
-            }
-        };
-        th.start();
-        x = 300; // Set x to 210 when sidebar is fully opened.
-    }
-    }//GEN-LAST:event_jButton1ActionPerformed
+int x = 0;
 
     private void jToggleButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton1ActionPerformed
-    if (x == 300) { // If the sidebar is open, close it.
-        Thread th = new Thread(){
-            @Override
-            public void run() {
-                try {
-                    for (int i = 300; i >= 0; i--) { // Decrement width to close the sidebar.
-                        Thread.sleep(3); // Smooth animation with 10ms sleep.
-                        jPanel2.setSize(i, 835); // Update size of sidebar.
+        if (x == 300) { // If the sidebar is open, close it.
+            Thread th = new Thread(){
+                @Override
+                public void run() {
+                    try {
+                        for (int i = 300; i >= 0; i--) { // Decrement width to close the sidebar.
+                            Thread.sleep(3); // Smooth animation with 10ms sleep.
+                            jPanel2.setSize(i, 835); // Update size of sidebar.
+                        }
+                    } catch (Exception e) {
+                        JOptionPane.showMessageDialog(null, e);
                     }
-                } catch (Exception e) {
-                    JOptionPane.showMessageDialog(null, e);
                 }
-            }
-        };
-        th.start();
-        x = 0; // Set x to 0 when sidebar is fully closed.
-        
-        // Optionally, hide the panel after the sidebar is fully closed.
-        // You can do this after the loop finishes, or by adding some logic inside the loop.
-        SwingUtilities.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                jPanel2.setVisible(false); // Hide the panel after closing animation
-            }
-        });
-    }
+            };
+            th.start();
+            x = 0; // Set x to 0 when sidebar is fully closed.
+
+            // Optionally, hide the panel after the sidebar is fully closed.
+            // You can do this after the loop finishes, or by adding some logic inside the loop.
+            SwingUtilities.invokeLater(new Runnable() {
+                @Override
+                public void run() {
+                    jPanel2.setVisible(false); // Hide the panel after closing animation
+                }
+            });
+        }
     }//GEN-LAST:event_jToggleButton1ActionPerformed
 
     private void jLabel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseClicked
-        
+        Dashboard1 db = new Dashboard1();
+        db.setVisible(true);
+        db.setLocationRelativeTo(null);
+        this.setVisible(false);
     }//GEN-LAST:event_jLabel7MouseClicked
 
-    private void jLabel10MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel10MouseEntered
-        Login login = new Login();
-        login.setVisible(true);
-        login.setLocationRelativeTo(null);
-        this.setVisible(false);    }//GEN-LAST:event_jLabel10MouseEntered
-
     private void jLabel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MouseClicked
-        woSetting wo = new woSetting();     
+        woSetting wo = new woSetting();
         wo.setVisible(true);
         wo.setLocationRelativeTo(null);
         this.setVisible(false);
     }//GEN-LAST:event_jLabel8MouseClicked
+
+    private void jLabel10MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel10MouseEntered
+
+    }//GEN-LAST:event_jLabel10MouseEntered
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        if (x == 0) { // If the sidebar is closed, open it.
+            jPanel2.setVisible(true); // Make the sidebar visible.
+            jPanel2.setSize(x, 835); // Set initial size to 0 width.
+            Thread th = new Thread(){
+                @Override
+                public void run() {
+                    try {
+                        for (int i = 0; i <= 300; i++) { // Increment width to open the sidebar.
+                            Thread.sleep(1); // Smooth animation with 10ms sleep.
+                            jPanel2.setSize(i, 835); // Update size of sidebar.
+                        }
+                    } catch (Exception e) {
+                        JOptionPane.showMessageDialog(null, e);
+                    }
+                }
+            };
+            th.start();
+            x = 300; // Set x to 210 when sidebar is fully opened.
+        }
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jLabel10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel10MouseClicked
+       Login l = new Login();
+       l.setVisible(true);
+       l.setLocationRelativeTo(null);
+       this.setVisible(false);
+    }//GEN-LAST:event_jLabel10MouseClicked
+
+    private void jLabel11KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jLabel11KeyPressed
+     
+    }//GEN-LAST:event_jLabel11KeyPressed
+
+    private void jLabel11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel11MouseClicked
+          PaymentPage pp = new PaymentPage();
+       pp.setVisible(true);
+       pp.setLocationRelativeTo(null);
+       this.setVisible(false);
+    }//GEN-LAST:event_jLabel11MouseClicked
 
     /**
      * @param args the command line arguments
@@ -335,20 +363,20 @@ public class Dashboard extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Dashboard.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Dashboard1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Dashboard.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Dashboard1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Dashboard.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Dashboard1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Dashboard.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Dashboard1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Dashboard().setVisible(true);
+                new Dashboard1().setVisible(true);
             }
         });
     }
@@ -388,7 +416,6 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JLayeredPane jLayeredPane1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane2;

@@ -44,6 +44,7 @@ public class Login extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(390, 682));
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -177,11 +178,11 @@ public class Login extends javax.swing.JFrame {
 
         jPasswordField1.getAccessibleContext().setAccessibleName("");
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 230, 330, 430));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 210, 330, 430));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/LOGOFR.png"))); // NOI18N
         jLabel1.setText("  ");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 40, 190, 190));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 20, 180, 190));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/bgTest.png"))); // NOI18N
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 390, 810));
@@ -207,6 +208,7 @@ public class Login extends javax.swing.JFrame {
         signup.setVisible(true);
         signup.setLocationRelativeTo(null);
         this.setVisible(false);
+        
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -233,6 +235,7 @@ if (password.isEmpty()) {
 
 WelcomePage welcome = new WelcomePage();
 welcome.setVisible(true);
+welcome.setLocationRelativeTo(null);
 this.setVisible(false); // Hide the current window
 
     }//GEN-LAST:event_jButton1ActionPerformed

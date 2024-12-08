@@ -51,7 +51,8 @@ public class Questionnare extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 102, 255));
-        setMaximumSize(new java.awt.Dimension(393, 852));
+        setMaximumSize(new java.awt.Dimension(393, 682));
+        setPreferredSize(new java.awt.Dimension(409, 682));
 
         jPanel1.setBackground(new java.awt.Color(245, 244, 244));
         jPanel1.setMaximumSize(new java.awt.Dimension(393, 852));
@@ -59,7 +60,7 @@ public class Questionnare extends javax.swing.JFrame {
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/LOGOFR.png"))); // NOI18N
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(135, 50, -1, -1));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 20, 260, -1));
 
         jComboBox2.setFont(new java.awt.Font("Lucida Sans Typewriter", 0, 14)); // NOI18N
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Gender", "Male", "Female" }));
@@ -68,30 +69,30 @@ public class Questionnare extends javax.swing.JFrame {
                 jComboBox2ActionPerformed(evt);
             }
         });
-        jPanel1.add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(32, 346, 340, 43));
+        jPanel1.add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 270, 340, 43));
 
         jLabel2.setBackground(new java.awt.Color(0, 0, 0));
         jLabel2.setFont(new java.awt.Font("Lucida Sans Typewriter", 1, 18)); // NOI18N
         jLabel2.setText("Lets complete your profile!");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(32, 275, 305, 37));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 210, 305, 37));
 
         jLabel3.setFont(new java.awt.Font("Lucida Sans Typewriter", 0, 14)); // NOI18N
         jLabel3.setText("Date of Birth");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 400, 135, -1));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 320, 135, -1));
 
         jLabel4.setFont(new java.awt.Font("Lucida Sans Typewriter", 0, 14)); // NOI18N
         jLabel4.setText("Your Weight");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 470, 98, -1));
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 390, 98, -1));
 
         jLabel6.setFont(new java.awt.Font("Lucida Sans Typewriter", 0, 14)); // NOI18N
         jLabel6.setText("Your Height");
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 550, 98, -1));
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 470, 98, -1));
 
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Button-Kg (1).png"))); // NOI18N
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 490, -1, -1));
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 410, -1, -1));
 
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Button-Cm.png"))); // NOI18N
-        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 570, -1, -1));
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 490, -1, -1));
 
         jButton2.setBackground(new java.awt.Color(242, 242, 242));
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Nextbnt1_1.png"))); // NOI18N
@@ -101,28 +102,28 @@ public class Questionnare extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 660, -1, 78));
+        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 550, -1, 78));
 
         Birthdate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BirthdateActionPerformed(evt);
             }
         });
-        jPanel1.add(Birthdate, new org.netbeans.lib.awtextra.AbsoluteConstraints(32, 424, 340, 42));
+        jPanel1.add(Birthdate, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 340, 340, 42));
 
         Weight.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 WeightActionPerformed(evt);
             }
         });
-        jPanel1.add(Weight, new org.netbeans.lib.awtextra.AbsoluteConstraints(32, 495, 280, 42));
+        jPanel1.add(Weight, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 420, 280, 42));
 
         Height.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 HeightActionPerformed(evt);
             }
         });
-        jPanel1.add(Height, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 570, 280, 50));
+        jPanel1.add(Height, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 490, 280, 50));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

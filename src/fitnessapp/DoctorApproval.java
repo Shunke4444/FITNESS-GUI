@@ -44,9 +44,9 @@ public class DoctorApproval extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
-        setMaximumSize(new java.awt.Dimension(398, 852));
-        setMinimumSize(new java.awt.Dimension(398, 852));
-        setPreferredSize(new java.awt.Dimension(398, 852));
+        setMaximumSize(new java.awt.Dimension(398, 682));
+        setMinimumSize(new java.awt.Dimension(398, 682));
+        setPreferredSize(new java.awt.Dimension(398, 682));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));

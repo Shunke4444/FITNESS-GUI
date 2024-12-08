@@ -33,17 +33,17 @@ public class Question4 extends javax.swing.JFrame {
         jButton3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(392, 852));
-        setMinimumSize(new java.awt.Dimension(392, 852));
-        setPreferredSize(new java.awt.Dimension(392, 852));
+        setMaximumSize(new java.awt.Dimension(392, 682));
+        setMinimumSize(new java.awt.Dimension(392, 682));
+        setPreferredSize(new java.awt.Dimension(392, 682));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/FitLevel.png"))); // NOI18N
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -40, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Lucida Sans Typewriter", 1, 14)); // NOI18N
         jLabel2.setText("How would you describe your fitness level?");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 440, -1, -1));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 400, -1, 20));
 
         jButton1.setFont(new java.awt.Font("Lucida Sans Typewriter", 1, 12)); // NOI18N
         jButton1.setText("I have a workout plan for myself");
@@ -53,7 +53,7 @@ public class Question4 extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 610, 290, 50));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 570, 290, 50));
 
         jButton2.setFont(new java.awt.Font("Lucida Sans Typewriter", 1, 12)); // NOI18N
         jButton2.setText("I've never worked out before");
@@ -62,7 +62,7 @@ public class Question4 extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 490, 290, 50));
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 450, 290, 50));
 
         jButton3.setFont(new java.awt.Font("Lucida Sans Typewriter", 1, 12)); // NOI18N
         jButton3.setText("A little bit but not consistent");
@@ -72,7 +72,7 @@ public class Question4 extends javax.swing.JFrame {
                 jButton3ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 550, 290, 50));
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 510, 290, 50));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

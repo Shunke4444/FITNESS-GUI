@@ -33,9 +33,9 @@ public class Welcome2 extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(392, 852));
-        setMinimumSize(new java.awt.Dimension(392, 852));
-        setPreferredSize(new java.awt.Dimension(392, 852));
+        setMaximumSize(new java.awt.Dimension(392, 682));
+        setMinimumSize(new java.awt.Dimension(392, 682));
+        setPreferredSize(new java.awt.Dimension(392, 682));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/WelcomeUser.png"))); // NOI18N
 
@@ -90,18 +90,18 @@ public class Welcome2 extends javax.swing.JFrame {
                 .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel4)
-                .addGap(108, 108, 108)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton1)
-                .addContainerGap(524, Short.MAX_VALUE))
+                .addContainerGap(626, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        Dashboard dashboard = new Dashboard();
-        dashboard.setLocationRelativeTo(null);
-        dashboard.setVisible(true);
+        Dashboard1 db = new Dashboard1();
+        db.setVisible(true);
+        db.setLocationRelativeTo(null);
         this.setVisible(false);
     }//GEN-LAST:event_jButton1ActionPerformed
 
