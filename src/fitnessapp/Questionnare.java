@@ -174,6 +174,7 @@ public class Questionnare extends javax.swing.JFrame {
 
         // Proceed to the next page
         Quest2 quest = new Quest2();
+        quest.setLocationRelativeTo(null);
         quest.setVisible(true);
         this.setVisible(false);
     }

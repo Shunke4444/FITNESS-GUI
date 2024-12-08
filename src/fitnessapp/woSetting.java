@@ -6,6 +6,8 @@ package fitnessapp;
 
 import ep.Exercise;
 import ep.Exercise2;
+import javax.swing.JOptionPane;
+import javax.swing.SwingUtilities;
 
 /**
  *
@@ -29,6 +31,27 @@ public class woSetting extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel2 = new javax.swing.JPanel();
+        jToggleButton1 = new javax.swing.JToggleButton();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
         Orangebg = new javax.swing.JPanel();
         header = new javax.swing.JPanel();
         profile = new javax.swing.JLabel();
@@ -49,8 +72,98 @@ public class woSetting extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel2.setBackground(new java.awt.Color(171, 220, 229));
+        jPanel2.setMinimumSize(new java.awt.Dimension(300, 84));
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jToggleButton1.setBackground(new java.awt.Color(171, 220, 229));
+        jToggleButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/menu.png"))); // NOI18N
+        jToggleButton1.setBorder(null);
+        jToggleButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jToggleButton1ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jToggleButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 20, 80, 40));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Line.png"))); // NOI18N
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 74, 310, 10));
+        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, 60));
+
+        jLabel4.setFont(new java.awt.Font("Lucida Sans Typewriter", 0, 12)); // NOI18N
+        jLabel4.setText("Michael?");
+        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 30, 70, 40));
+
+        jLabel5.setFont(new java.awt.Font("Lucida Sans Typewriter", 0, 14)); // NOI18N
+        jLabel5.setText("Where to,");
+        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 10, -1, 40));
+
+        jLabel7.setFont(new java.awt.Font("Lucida Sans Typewriter", 0, 24)); // NOI18N
+        jLabel7.setText("Home");
+        jLabel7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel7MouseClicked(evt);
+            }
+        });
+        jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 200, 80, 30));
+
+        jLabel8.setFont(new java.awt.Font("Lucida Sans Typewriter", 0, 24)); // NOI18N
+        jLabel8.setText("Exercise");
+        jLabel8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel8MouseClicked(evt);
+            }
+        });
+        jPanel2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 260, 120, 20));
+
+        jLabel9.setFont(new java.awt.Font("Lucida Sans Typewriter", 0, 24)); // NOI18N
+        jLabel9.setText("Mealplans");
+        jPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 310, 150, 30));
+
+        jLabel10.setFont(new java.awt.Font("Lucida Sans Typewriter", 0, 24)); // NOI18N
+        jLabel10.setText("Logout");
+        jLabel10.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jLabel10MouseEntered(evt);
+            }
+        });
+        jPanel2.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 410, 190, 30));
+
+        jLabel11.setFont(new java.awt.Font("Lucida Sans Typewriter", 0, 24)); // NOI18N
+        jLabel11.setText("Subscription");
+        jPanel2.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 360, 190, 30));
+
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/LOGOFR.png"))); // NOI18N
+        jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 570, -1, -1));
+        jPanel2.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 150, -1, -1));
+
+        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/FoodNav.png"))); // NOI18N
+        jPanel2.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 310, -1, -1));
+        jPanel2.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, -1, -1));
+        jPanel2.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 130, -1, -1));
+
+        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/HomeNav.png"))); // NOI18N
+        jPanel2.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, -1, -1));
+
+        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/ExerciseNav.png"))); // NOI18N
+        jPanel2.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 256, -1, -1));
+
+        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/PlansNav.png"))); // NOI18N
+        jLabel18.setText("   ");
+        jPanel2.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 360, 80, 30));
+
+        jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/LogoutNav.png"))); // NOI18N
+        jPanel2.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 410, -1, 30));
+
+        jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/dp.png"))); // NOI18N
+        jPanel2.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, -1));
+
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 290, 930));
 
         Orangebg.setBackground(new java.awt.Color(255, 152, 63));
+        Orangebg.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         header.setBackground(new java.awt.Color(171, 220, 229));
 
@@ -59,6 +172,11 @@ public class woSetting extends javax.swing.JFrame {
         magnify.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/search.png"))); // NOI18N
 
         menu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/menu.png"))); // NOI18N
+        menu.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                menuMouseClicked(evt);
+            }
+        });
 
         exercise.setFont(new java.awt.Font("Lucida Sans", 1, 14)); // NOI18N
         exercise.setText("Exercise");
@@ -105,15 +223,19 @@ public class woSetting extends javax.swing.JFrame {
                         .addGap(0, 0, Short.MAX_VALUE))))
         );
 
+        Orangebg.add(header, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
         home.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/home.png"))); // NOI18N
         home.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 homeActionPerformed(evt);
             }
         });
+        Orangebg.add(home, new org.netbeans.lib.awtextra.AbsoluteConstraints(76, 135, 234, 193));
 
         setting.setFont(new java.awt.Font("Lucida Sans", 1, 24)); // NOI18N
         setting.setText("Workout Setting");
+        Orangebg.add(setting, new org.netbeans.lib.awtextra.AbsoluteConstraints(92, 87, -1, -1));
 
         footer.setBackground(new java.awt.Color(171, 220, 229));
 
@@ -152,6 +274,8 @@ public class woSetting extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        Orangebg.add(footer, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 885, 395, -1));
+
         jButton1.setBackground(new java.awt.Color(255, 152, 63));
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/backpage.png"))); // NOI18N
         jButton1.setBorder(null);
@@ -160,6 +284,7 @@ public class woSetting extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
+        Orangebg.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 72, -1, -1));
 
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Gym (2).png"))); // NOI18N
         jButton2.setBorder(null);
@@ -168,57 +293,9 @@ public class woSetting extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
+        Orangebg.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(76, 372, 234, 207));
 
-        javax.swing.GroupLayout OrangebgLayout = new javax.swing.GroupLayout(Orangebg);
-        Orangebg.setLayout(OrangebgLayout);
-        OrangebgLayout.setHorizontalGroup(
-            OrangebgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(header, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(footer, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(OrangebgLayout.createSequentialGroup()
-                .addGroup(OrangebgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(OrangebgLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jButton1)
-                        .addGap(54, 54, 54)
-                        .addComponent(setting))
-                    .addGroup(OrangebgLayout.createSequentialGroup()
-                        .addGap(76, 76, 76)
-                        .addGroup(OrangebgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                            .addComponent(home, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        OrangebgLayout.setVerticalGroup(
-            OrangebgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(OrangebgLayout.createSequentialGroup()
-                .addComponent(header, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(OrangebgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(OrangebgLayout.createSequentialGroup()
-                        .addGap(12, 12, 12)
-                        .addComponent(jButton1)
-                        .addGap(31, 31, 31))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, OrangebgLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(setting)
-                        .addGap(18, 18, 18)))
-                .addComponent(home, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(44, 44, 44)
-                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 207, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 58, Short.MAX_VALUE)
-                .addComponent(footer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Orangebg, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Orangebg, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
+        getContentPane().add(Orangebg, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
         setLocationRelativeTo(null);
@@ -241,6 +318,74 @@ public class woSetting extends javax.swing.JFrame {
         exer.setLocationRelativeTo(null);
         this.setVisible(false);
     }//GEN-LAST:event_jButton2ActionPerformed
+    int x = 0;
+    private void jToggleButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton1ActionPerformed
+        if (x == 300) { // If the sidebar is open, close it.
+            Thread th = new Thread(){
+                @Override
+                public void run() {
+                    try {
+                        for (int i = 300; i >= 0; i--) { // Decrement width to close the sidebar.
+                            Thread.sleep(3); // Smooth animation with 10ms sleep.
+                            jPanel2.setSize(i, 835); // Update size of sidebar.
+                        }
+                    } catch (Exception e) {
+                        JOptionPane.showMessageDialog(null, e);
+                    }
+                }
+            };
+            th.start();
+            x = 0; // Set x to 0 when sidebar is fully closed.
+
+            // Optionally, hide the panel after the sidebar is fully closed.
+            // You can do this after the loop finishes, or by adding some logic inside the loop.
+            SwingUtilities.invokeLater(new Runnable() {
+                @Override
+                public void run() {
+                    jPanel2.setVisible(false); // Hide the panel after closing animation
+                }
+            });
+        }
+    }//GEN-LAST:event_jToggleButton1ActionPerformed
+
+    private void jLabel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseClicked
+
+    }//GEN-LAST:event_jLabel7MouseClicked
+
+    private void jLabel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MouseClicked
+        woSetting wo = new woSetting();
+        wo.setVisible(true);
+        wo.setLocationRelativeTo(null);
+        this.setVisible(false);
+    }//GEN-LAST:event_jLabel8MouseClicked
+
+    private void jLabel10MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel10MouseEntered
+        Login login = new Login();
+        login.setVisible(true);
+        login.setLocationRelativeTo(null);
+    }//GEN-LAST:event_jLabel10MouseEntered
+
+    private void menuMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menuMouseClicked
+        if (x == 0) { // If the sidebar is closed, open it.
+        jPanel2.setVisible(true); // Make the sidebar visible.
+        jPanel2.setSize(x, 835); // Set initial size to 0 width.
+        Thread th = new Thread(){
+            @Override
+            public void run() {
+                try {
+                    for (int i = 0; i <= 300; i++) { // Increment width to open the sidebar.
+                        Thread.sleep(1); // Smooth animation with 10ms sleep.
+                        jPanel2.setSize(i, 835); // Update size of sidebar.
+                    }
+                } catch (Exception e) {
+                    JOptionPane.showMessageDialog(null, e);
+                }
+            }
+        };
+        th.start();
+        x = 300; // Set x to 210 when sidebar is fully opened.
+    }
+    }//GEN-LAST:event_menuMouseClicked
 
     /**
      * @param args the command line arguments
@@ -288,6 +433,27 @@ public class woSetting extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JToggleButton jToggleButton1;
     private javax.swing.JLabel magnify;
     private javax.swing.JLabel menu;
     private javax.swing.JLabel notif;

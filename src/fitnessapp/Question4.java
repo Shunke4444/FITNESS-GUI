@@ -79,6 +79,7 @@ public class Question4 extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         Welcome2 welcome2 = new Welcome2();
+        welcome2.setLocationRelativeTo(null);
         welcome2.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_jButton1ActionPerformed
@@ -86,14 +87,15 @@ public class Question4 extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         Welcome2 welcome2 = new Welcome2();
         welcome2.setVisible(true);
+        welcome2.setLocationRelativeTo(null);
         this.setVisible(false);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
       Welcome2 welcome2 = new Welcome2();
       welcome2.setVisible(true);
+      welcome2.setLocationRelativeTo(null);
       this.setVisible(false);
-
     }//GEN-LAST:event_jButton3ActionPerformed
 
     /**

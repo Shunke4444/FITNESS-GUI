@@ -138,6 +138,7 @@ public class DoctorApproval extends javax.swing.JFrame {
             dialog.dispose(); // Close the current dialog
             Question2 quest = new Question2();
             quest.setVisible(true);
+            quest.setLocationRelativeTo(null);
             this.setVisible(false);// Open the next JFrame
         });
         dialog.add(nextPageButton);
