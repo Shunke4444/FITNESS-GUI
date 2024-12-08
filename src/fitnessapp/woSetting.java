@@ -6,8 +6,6 @@ package fitnessapp;
 
 import ep.Exercise;
 import ep.Exercise2;
-import javax.swing.JOptionPane;
-import javax.swing.SwingUtilities;
 
 /**
  *
@@ -50,14 +48,11 @@ public class woSetting extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(2147483647, 682));
-        setMinimumSize(new java.awt.Dimension(395, 682));
-        setPreferredSize(new java.awt.Dimension(395, 682));
+        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setResizable(false);
-        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         Orangebg.setBackground(new java.awt.Color(255, 152, 63));
-        Orangebg.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        Orangebg.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         header.setBackground(new java.awt.Color(171, 220, 229));
 
@@ -66,11 +61,6 @@ public class woSetting extends javax.swing.JFrame {
         magnify.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/search.png"))); // NOI18N
 
         menu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/menu.png"))); // NOI18N
-        menu.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                menuMouseClicked(evt);
-            }
-        });
 
         exercise.setFont(new java.awt.Font("Lucida Sans", 1, 14)); // NOI18N
         exercise.setText("Exercise");
@@ -117,19 +107,18 @@ public class woSetting extends javax.swing.JFrame {
                         .addGap(0, 0, Short.MAX_VALUE))))
         );
 
-        Orangebg.add(header, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
-
+        home.setBackground(new java.awt.Color(255, 204, 0));
         home.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/home.png"))); // NOI18N
+        home.setBorder(null);
+        home.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         home.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 homeActionPerformed(evt);
             }
         });
-        Orangebg.add(home, new org.netbeans.lib.awtextra.AbsoluteConstraints(76, 135, 234, 193));
 
         setting.setFont(new java.awt.Font("Lucida Sans", 1, 24)); // NOI18N
         setting.setText("Workout Setting");
-        Orangebg.add(setting, new org.netbeans.lib.awtextra.AbsoluteConstraints(92, 87, -1, -1));
 
         footer.setBackground(new java.awt.Color(171, 220, 229));
 
@@ -168,8 +157,6 @@ public class woSetting extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        Orangebg.add(footer, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 885, 395, -1));
-
         jButton1.setBackground(new java.awt.Color(255, 152, 63));
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/backpage.png"))); // NOI18N
         jButton1.setBorder(null);
@@ -178,18 +165,67 @@ public class woSetting extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        Orangebg.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 90, -1, -1));
 
+        jButton2.setBackground(new java.awt.Color(204, 255, 51));
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Gym (2).png"))); // NOI18N
         jButton2.setBorder(null);
+        jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
-        Orangebg.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(76, 372, 234, 207));
 
-        getContentPane().add(Orangebg, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        javax.swing.GroupLayout OrangebgLayout = new javax.swing.GroupLayout(Orangebg);
+        Orangebg.setLayout(OrangebgLayout);
+        OrangebgLayout.setHorizontalGroup(
+            OrangebgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(header, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(footer, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(OrangebgLayout.createSequentialGroup()
+                .addGroup(OrangebgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(OrangebgLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jButton1)
+                        .addGap(54, 54, 54)
+                        .addComponent(setting))
+                    .addGroup(OrangebgLayout.createSequentialGroup()
+                        .addGap(76, 76, 76)
+                        .addGroup(OrangebgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                            .addComponent(home, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        OrangebgLayout.setVerticalGroup(
+            OrangebgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(OrangebgLayout.createSequentialGroup()
+                .addComponent(header, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(OrangebgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(OrangebgLayout.createSequentialGroup()
+                        .addGap(12, 12, 12)
+                        .addComponent(jButton1)
+                        .addGap(31, 31, 31))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, OrangebgLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(setting)
+                        .addGap(18, 18, 18)))
+                .addComponent(home, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(44, 44, 44)
+                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 207, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 58, Short.MAX_VALUE)
+                .addComponent(footer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(Orangebg, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(Orangebg, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
 
         pack();
         setLocationRelativeTo(null);
@@ -212,9 +248,6 @@ public class woSetting extends javax.swing.JFrame {
         exer.setLocationRelativeTo(null);
         this.setVisible(false);
     }//GEN-LAST:event_jButton2ActionPerformed
-    private void menuMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menuMouseClicked
-
-    }//GEN-LAST:event_menuMouseClicked
 
     /**
      * @param args the command line arguments

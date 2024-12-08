@@ -4,6 +4,7 @@
  */
 package fitnessapp;
 
+
 /**
  *
  * @author jihad
@@ -33,9 +34,7 @@ public class Welcome2 extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(392, 682));
-        setMinimumSize(new java.awt.Dimension(392, 682));
-        setPreferredSize(new java.awt.Dimension(392, 682));
+        setMinimumSize(new java.awt.Dimension(392, 852));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/WelcomeUser.png"))); // NOI18N
 
@@ -90,18 +89,18 @@ public class Welcome2 extends javax.swing.JFrame {
                 .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(18, 18, 18)
                 .addComponent(jButton1)
-                .addContainerGap(626, Short.MAX_VALUE))
+                .addContainerGap(36, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        Dashboard1 db = new Dashboard1();
-        db.setVisible(true);
-        db.setLocationRelativeTo(null);
+        Dashboard1 dashboard = new Dashboard1();
+        dashboard.setLocationRelativeTo(null);
+        dashboard.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_jButton1ActionPerformed
 
